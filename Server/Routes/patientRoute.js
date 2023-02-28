@@ -1,14 +1,13 @@
-const express = require('express')
+const express = require("express");
 
-const router = express.Router()
+const router = express.Router();
 const {
-    upload,
-    createPatient,
-    loginPatient
-} = require('../Controllers/patientController')
+  upload,
+  createPatient,
+  loginPatient,
+} = require("../Controllers/patientController");
 
+router.post("/", upload.single("image"), createPatient);
+router.post("/login", loginPatient);
 
-router.post('/', upload.single('image'), createPatient);
-router.post('/login', loginPatient)
-
-module.exports = router
+module.exports = router;
