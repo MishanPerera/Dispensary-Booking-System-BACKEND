@@ -1,6 +1,6 @@
 # Dispensary-Booking-System-BACKEND
 
-## Run BCAKEND of the application
+## Run BACKEND of the Application
 
 1. Clone the Repository.
 2.  Run ``` npm install ``` (you should install both server side and the client side)
